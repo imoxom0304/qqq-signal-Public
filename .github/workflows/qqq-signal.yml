@@ -1,0 +1,34 @@
+name: qqq-signal
+
+on:
+  schedule:
+    # UTC 22:00 (月〜金) = 日本時間 7:00 (火〜土)
+    # 米国の終値が確定した後です。GitHubの都合で数分〜数十分遅れることがあります。
+    - cron: "0 22 * * 1-5"
+  workflow_dispatch:   # 手動実行ボタン(動作確認用)
+
+permissions:
+  contents: write      # status.json をリポジトリに保存するため
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 判定して通知する
+        run: python qqq_signal.py --out status.json
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY }}   # 任意。未設定でも動く
+
+      - name: status.json を保存する
+        run: |
+          git config user.name "qqq-signal"
+          git config user.email "qqq-signal@users.noreply.github.com"
+          git add status.json
+          git diff --cached --quiet || (git commit -m "update status" && git push)
