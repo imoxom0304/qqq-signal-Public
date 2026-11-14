@@ -1,0 +1,80 @@
+{
+  "label": "発動中",
+  "state": "boost",
+  "event": null,
+  "daily_man": 3.0,
+  "title": "🔴 発動中 3万円/日",
+  "message": "継続中（2026-11-05〜）。200日線の下。 QQQ 679.89 / 200日線 682.24（-0.3%）・米国11/13終値",
+  "priority": 3,
+  "data_date": "2026-11-13",
+  "close": 679.89,
+  "ma200": 682.24,
+  "gap_pct": -0.34,
+  "above_count": 0,
+  "days_to_release": null,
+  "since": "2026-11-05",
+  "source": "yahoo",
+  "recent": [
+    {
+      "date": "2026-11-02",
+      "close": 681.09,
+      "ma200": 679.82,
+      "state": "normal"
+    },
+    {
+      "date": "2026-11-03",
+      "close": 685.28,
+      "ma200": 680.14,
+      "state": "normal"
+    },
+    {
+      "date": "2026-11-04",
+      "close": 691.95,
+      "ma200": 680.56,
+      "state": "normal"
+    },
+    {
+      "date": "2026-11-05",
+      "close": 647.05,
+      "ma200": 680.71,
+      "state": "boost"
+    },
+    {
+      "date": "2026-11-06",
+      "close": 656.1,
+      "ma200": 680.89,
+      "state": "boost"
+    },
+    {
+      "date": "2026-11-09",
+      "close": 679.35,
+      "ma200": 681.17,
+      "state": "boost"
+    },
+    {
+      "date": "2026-11-10",
+      "close": 674.76,
+      "ma200": 681.42,
+      "state": "boost"
+    },
+    {
+      "date": "2026-11-11",
+      "close": 690.38,
+      "ma200": 681.71,
+      "state": "boost"
+    },
+    {
+      "date": "2026-11-12",
+      "close": 688.17,
+      "ma200": 681.99,
+      "state": "boost"
+    },
+    {
+      "date": "2026-11-13",
+      "close": 679.89,
+      "ma200": 682.24,
+      "state": "boost"
+    }
+  ],
+  "updated_at": "2026-11-14T20:22:57+09:00"
+}
