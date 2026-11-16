@@ -4,7 +4,7 @@ on:
   schedule:
     # UTC 22:00 (月〜金) = 日本時間 7:00 (火〜土)
     # 米国の終値が確定した後です。GitHubの都合で数分〜数十分遅れることがあります。
-    - cron: "0 22 * * 1-5"
+    - cron: "30 22 * * 1-5"
   workflow_dispatch:   # 手動実行ボタン(動作確認用)
 
 permissions:
