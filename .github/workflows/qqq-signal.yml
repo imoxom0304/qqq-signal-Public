@@ -3,7 +3,7 @@ name: qqq-signal
 on:
   schedule:
     # UTC 22:00 (月〜金) = 日本時間 7:00 (火〜土)
-    - cron: "00 22 * * 0-4"
+    - cron: "00 17 * * 0-4"
   workflow_dispatch:   # 手動実行ボタン(動作確認用)
 
 permissions:
